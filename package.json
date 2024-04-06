@@ -1,0 +1,27 @@
+{
+  "name": "interface",
+  "version": "1.0.0",
+  "description": "play with dynamic user interface",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "petred",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "css-loader": "^7.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-google": "^0.14.0",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^3.3.4",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "nodejs": "^0.0.0"
+  }
+}
