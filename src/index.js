@@ -1,21 +1,17 @@
 import _ from 'lodash';
 import './style.css';
-import Cuart from './pictures/cuart.jpg'
 
 
-function component() {
-    const element = document.createElement('div');
- 
-   // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
-    const myIcon = new Image();
-    myIcon.src = Cuart;
-  
-    element.appendChild(myIcon);
-  
- 
-    return element;
-  }
- 
-  document.body.appendChild(component());
+
+const dropbtn = document.querySelector('div.dropdown > button');
+const myDropDown = document.querySelector('#myDropdown');
+const dropdownContent = document.querySelector('div.dropdown > div.dropdown-content');
+
+      dropbtn.addEventListener('click', (e) => {
+                dropbtn.style.backgroundColor = 'red';
+                dropdownContent.setAttribute('style', 'display: block');
+      });
+      dropbtn.addEventListener('mouseleave', (e) => {
+        dropbtn.style.backgroundColor = 'darkcyan';
+        dropdownContent.setAttribute('style', 'display: none');
+      });

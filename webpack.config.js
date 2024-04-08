@@ -11,14 +11,14 @@ module.exports = {
 },  
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'user-interface',
+      title: 'interface',
       template: './src/interface.html',
     }),
   ],
   output: {
- //   filename: 'bundle.js',
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: 'images/[hash][ext][query]',
     clean: true,
 },
   module: {

@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "uinterface": "git subtree push --prefix dist origin gh-pages",
+    "interface": "git subtree push --prefix dist origin gh-pages",
     "watch": "webpack --watch",
     "build": "webpack"
   },

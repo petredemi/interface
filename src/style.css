@@ -1,3 +1,21 @@
 .hello {
     color: red;
   }
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+  button{
+    background-color: darkcyan;
+    font-size: 1.2rem;
+  }
+  #myDropdown{
+    background-color: bisque;
+    width: fit-content;
+  }
+  .dropdown-content{
+    display: none;
+    overflow: auto;
+    max-width: 50px;
+  }
