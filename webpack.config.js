@@ -8,7 +8,7 @@ module.exports = {
     image: './src/imageslider.js',
     drop: './src/dropdown.js',
     mobile: './src/mobile.js'
-},  
+  },  
   plugins: [
     new HtmlWebpackPlugin({
       title: 'interface',

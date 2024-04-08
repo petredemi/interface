@@ -1,21 +1,32 @@
 .hello {
     color: red;
   }
+.content{
+  display: flex;
+  grid-template-columns: 100px 100px;
+  gap: 20px;
+}
+
 .dropdown{
-  position: relative;
-  display: inline-block;
+  display: block;
+  overflow-y: hidden;
 }
 
   button{
     background-color: darkcyan;
     font-size: 1.2rem;
   }
-  #myDropdown{
-    background-color: bisque;
-    width: fit-content;
-  }
   .dropdown-content{
     display: none;
     overflow: auto;
-    max-width: 50px;
+    min-width: max-content;
+    flex-direction: column;
+
+  }
+  a{
+    text-decoration: none;
+    padding: 15px;
+    width: 75px;
+    background-color: antiquewhite;
+
   }

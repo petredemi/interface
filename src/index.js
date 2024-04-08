@@ -1,17 +1,25 @@
-import _ from 'lodash';
+import _, { constant } from 'lodash';
 import './style.css';
 
 
 
-const dropbtn = document.querySelector('div.dropdown > button');
-const myDropDown = document.querySelector('#myDropdown');
-const dropdownContent = document.querySelector('div.dropdown > div.dropdown-content');
+const btn = document.querySelectorAll('div.dropdown > button');
+const dropdownContent = document.querySelectorAll('div.dropdown > div.dropdown-content');
+const dropdown = document.querySelectorAll('div.content > div.dropdown');
+const alink = document.querySelectorAll('a');
 
-      dropbtn.addEventListener('click', (e) => {
-                dropbtn.style.backgroundColor = 'red';
-                dropdownContent.setAttribute('style', 'display: block');
-      });
-      dropbtn.addEventListener('mouseleave', (e) => {
-        dropbtn.style.backgroundColor = 'darkcyan';
-        dropdownContent.setAttribute('style', 'display: none');
-      });
+      btn.forEach((button, index) => button.addEventListener('click', (e) => {
+              btn[index].setAttribute('style', 'background-color: red');
+              dropdownContent[index].setAttribute('style', 'display: flex');
+      }));
+     dropdown.forEach((div, index) => div.addEventListener('mouseleave', (e) => {
+            btn[index].setAttribute('style', 'background-color: none');
+            dropdownContent[index].setAttribute('style', 'display: none');
+     }));
+     alink.forEach((div, index) => div.addEventListener('mouseover', (e) => {
+      alink[index].setAttribute('style', 'background-color: grey');
+    }));
+    alink.forEach((div, index) => div.addEventListener('mouseleave', (e) => {
+      alink[index].setAttribute('style', 'background-color: none');
+    }));
+
