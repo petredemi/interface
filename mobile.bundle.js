@@ -15,7 +15,7 @@
   \***********************/
 /***/ (() => {
 
-eval("const dropbtn = document.querySelectorAll('div.dropdown > button');\nconst myDropDown = document.querySelector('#myDropdown');\nconst dropdownContent = document.querySelector('div.dropdown > div.dropdown-content');\ndropbtn.addEventListener('click', (e) => {\n          dropbtn.style.backgroundColor = 'red';\n          dropdownContent.setAttribute('style', 'display: block');\n});\n\n//# sourceURL=webpack://interface/./src/mobile.js?");
+eval("\n\n//# sourceURL=webpack://interface/./src/mobile.js?");
 
 /***/ })
 
